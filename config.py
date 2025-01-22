@@ -5,8 +5,8 @@ import os
 load_dotenv()
 
 # Telegram API credentials obtained from https://my.telegram.org/auth
-API_ID = int(os.getenv("24184946"))  # Your Telegram API ID
-API_HASH = os.getenv("db7aa8593d6422dd3924f629d6cbe808")  # Your Telegram API Hash
+API_ID = int(os.getenv("API_ID", "24184946"))  # Your Telegram API ID
+API_HASH = os.getenv("API_HASH", "7844498459:AAFV_hFZa_syvMm9JGdBskhVJV3BncjovYU")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
 BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk").strip(", ").split(",")
