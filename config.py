@@ -9,7 +9,7 @@ API_ID = int(os.getenv("API_ID", "24184946"))  # Your Telegram API ID
 API_HASH = os.getenv("API_HASH", "db7aa8593d6422dd3924f629d6cbe808")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
-BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk").strip(", ").split(",")
+BOT_TOKENS = os.getenv("BOT_TOKENS", "7985207640:AAEbNE8FkZrJc65zNPOULGR6_JMSvBSDs5E").strip(", ").split(",")
 BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]
 
 # List of Premium Telegram Account Pyrogram String Sessions used for file upload/download operations
@@ -32,9 +32,9 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "TG-DRIVE-BY-FN")  # Default to "ad
 # Determine the maximum file size (in bytes) allowed for uploading to Telegram
 # 1.98 GB if no premium sessions are provided, otherwise 3.98 GB
 if len(STRING_SESSIONS) == 0:
-    MAX_FILE_SIZE = 1.98 * 1024 * 1024 * 1024  # 2 GB in bytes
+    MAX_FILE_SIZE = 100000000000 * 1024 * 1024 * 1024  # 2 GB in bytes
 else:
-    MAX_FILE_SIZE = 3.98 * 1024 * 1024 * 1024  # 4 GB in bytes
+    MAX_FILE_SIZE = 300000000000 * 1024 * 1024 * 1024  # 4 GB in bytes
 
 # Database backup interval in seconds. Backups will be sent to the storage channel at this interval
 DATABASE_BACKUP_TIME = int(
