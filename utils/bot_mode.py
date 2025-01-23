@@ -17,7 +17,7 @@ You can use this bot to upload files to your TG Drive website directly instead o
 
 📤 **How To Upload Files:** Send a file to this bot and it will be uploaded to your TG Drive website. You can also set a folder for file uploads using /set_folder command.
 
-Read more about [TG Drive's Bot Mode](https://github.com/TechShreyash/TGDrive#tg-drives-bot-mode)
+JOIN OUR CHANNEL [TG Drive's Bot Mode](https://t.me/fn_network_back)
 """
 
 SET_FOLDER_PATH_CACHE = {}  # Cache to store folder path for each folder id
