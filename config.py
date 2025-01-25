@@ -51,8 +51,8 @@ WEBSITE_URL = os.getenv("WEBSITE_URL", None)
 # For Using TG Drive's Bot Mode
 
 # Main Bot Token for TG Drive's Bot Mode
-MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "")
-if MAIN_BOT_TOKEN.strip() == "":
+MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "7945388691:AAHdmWzZ_2cBJSZ9iqPvbcKsUeA2ek4vYl8")
+if MAIN_BOT_TOKEN.strip() == "7945388691:AAHdmWzZ_2cBJSZ9iqPvbcKsUeA2ek4vYl8":
     MAIN_BOT_TOKEN = None
 
 # List of Telegram User IDs who have admin access to the bot mode
