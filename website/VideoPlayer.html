@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TG Drive - Video Player</title>
+
+    <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
 
     <style>
@@ -51,7 +54,8 @@
 <body>
 
     <div class="video-container">
-        <div id="my-player"></div>
+        <!-- JW Player Container -->
+        <div id="jw-player"></div>
     </div>
 
     <div class="buttons-container">
@@ -62,10 +66,12 @@
     <script>
         const downloadUrl = (new URL(window.location.href)).searchParams.get('url');
 
-        jwplayer("my-player").setup({
-            file: downloadUrl,
+    
+        jwplayer("jw-player").setup({
+            file: downloadUrl,  
             width: "100%",
-            aspectratio: "16:9",
+            height: "100%",
+            autostart: true,
             controls: true
         });
 
